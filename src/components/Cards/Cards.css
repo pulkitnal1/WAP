@@ -1,0 +1,23 @@
+.cards{
+
+
+width: 90%;
+ margin: 0 auto;
+ /* max-width: 1500px; */
+ max-width: 80rem;
+}
+.cards__cols{
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.cards__cols a:any-link{
+  color: inherit;
+    cursor: pointer;
+    text-decoration: none !important;
+}

@@ -1,0 +1,210 @@
+.addApplication{
+  display:flex;
+  justify-content: center;
+}
+.addApplication__container{
+margin-top: 30px;
+padding: 20px;
+/* align-items: center; */
+border-radius: 10px;
+/* display:flex; */
+/* flex-direction: row; */
+background-color: #d8d8d8;
+width:1200px;
+position: relative;
+  display: grid;
+  grid-template: 100% / 50% 50%;
+  box-shadow: 2px 2px 10px 0 rgba(#333, 0.2);
+}
+.addApplication__leftContainer{
+padding: 20px;
+display:flex;
+flex-direction: column;
+text-align: left;
+position: relative;
+}
+.addApplication__rightContainer{
+padding: 20px;
+display: flex;
+flex-direction: column;
+
+}
+.addApplication__rightContainer:before {
+  content: '';
+  width: 2px;
+  height: 70%;
+  background: linear-gradient(45deg,  #621a4b 0%,#da72b9 100%);
+  opacity: 1;
+  left: 0;
+  top:20%;
+  position: absolute;
+  margin-left: 50%;
+}
+.addApplication__input{
+  margin-bottom: 10px;
+  width: 500px !important;
+}
+.addApplication__input:focus {
+  /* outline:none !important */
+    border: 2px solid #621a4b !important;
+}
+.addApplication__label{
+  margin-bottom: 10px;
+
+}
+.addApplication__heading{
+  font-size: 2.5rem;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(45deg,  #621a4b 0%,#da72b9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.addApplication__addButton{
+  justify:left;
+  margin-top: 10px;
+  width: 100px;
+  background: linear-gradient(45deg,  #621a4b 0%,#da72b9 100%);
+  border-radius: 10px;
+  padding: 5px;
+  color: rgba(255,255,255,0.7);
+  font-family: 'Montserrat';
+  font-weight: 300;
+  text-align: center;
+  cursor: pointer;
+}
+.addApplication__details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.addApplication__inlineButton{
+float: right;
+font-size: 0.83em;
+width: 200px;
+margin-left: auto;
+margin-bottom: -20px;
+transition: transform .2s;
+}
+.addApplication__inlineButton:hover{
+
+   transform: scale(1.1);
+}
+.addApplication__createButton{
+      width: 200px;
+      margin-left: 335px;
+      margin-top: 100px;
+
+}
+.addApplication__rightContainer fieldset{
+  border-radius: 10px;
+  padding: 5px;
+  border-width: 3px;
+  border-style: solid;
+  border-image-source: linear-gradient(45deg,  #621a4b 0%,#da72b9 100%);
+  border-image-slice: 1;
+
+  background: -webkit-linear-gradient(45deg,  #621a4b 0%,#da72b9 100%);
+-webkit-background-clip: text;
+margin-bottom: 10px;
+
+}
+
+.addApplication__rightContainer fieldset legend{
+    background: -webkit-linear-gradient(45deg,  #621a4b 0%,#da72b9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  font-size: 1.5em;
+}
+.hideContainer{
+  /* visibility: hidden; */
+  opacity: 0;
+  left:600px;
+
+ transform: translateX(100%);
+ /* transition: opacity 1s; */
+}
+.showContainer{
+  opacity: 1;
+  left:20px;
+  transition: transform 1s ease,opacity 0.5s cubic-bezier(1,0.5,1,0.5);
+   transform: translateX(0);
+
+}
+.stickyContainer{
+  position: absolute;
+
+}
+.addApplication__dropdown{
+  width: 500px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 0 !important;
+  width: 100%;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+}
+.addApplication__dropdown:focus{
+    border: 2px solid #621a4b !important;
+}
+.addApplication__dynamicRows{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.addApplication__table{
+  border-spacing: 0 10px;
+  border-collapse: separate;
+  width: 95%;
+margin-left: auto;
+margin-right: auto;
+}
+.addApplication__table tr{
+    width: 100%;
+    background-color: white;
+    padding: 5px;
+    margin-bottom:10px;
+
+}
+.addApplication__table td{
+    padding: 10px;
+
+    background-color: white;
+
+    /* border: 1px solid red; */
+}
+.addApplication__table tr td:first-child {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+padding-left: 20px;
+}
+.addApplication__table tr td:last-child {
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding-right: 0px;
+  padding-right: 20px;
+    text-align: right;
+}
+.addApplication__icon{
+
+  border: none;
+    color: red;
+    font-size: medium;
+    background-color: white;
+    font-weight: bold;
+    background: -webkit-linear-gradient(45deg,  #621a4b 0%,#da72b9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  font-size: 1.2em;
+transition: transform .2s;
+  }
+.addApplication__icon:hover{
+  /* background-color: darkgray; */
+   transform: scale(1.5);
+  cursor: pointer;
+}

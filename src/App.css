@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+ -webkit-box-sizing: border-box;
+         box-sizing: border-box;
+}
+h1{
+  font-size: 2.5rem;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  color: #444;
+  text-align: center;
+  margin: 2rem 0;
+}
+input[type=text] {
+  padding: 10px;
+  border: 0 !important;
+  /* border-bottom: 1px solid lightgray; */
+  border-radius: 10px;
+  width: 100%;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+}
+
+textarea {
+  width:100%;
+  resize: vertical;
+  padding:15px;
+  border-radius:15px;
+  border:0;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+  height:150px;
+}
+*:focus{
+  outline: none !important;
+}
